@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uezwiFOz6yoeVo0afR+eiViagdlOGm6OYnfoq4niLY8=",
+  "Hash": "9d4Xyx8NO5FtKohQSBvipfu+n48DVJMlzjNU/v+xnAM=",
   "Source": "WebApplication-TareaIII",
   "BasePath": "_content/WebApplication-TareaIII",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\metodos_online.js"
+    },
+    {
+      "Identity": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\js\\tabla_dinamica.js",
+      "SourceId": "WebApplication-TareaIII",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\",
+      "BasePath": "_content/WebApplication-TareaIII",
+      "RelativePath": "js/tabla_dinamica.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tabla_dinamica.js"
     },
     {
       "Identity": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

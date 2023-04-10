@@ -45,16 +45,31 @@ main {
     height: 5%;
     background-color: black;
 }
+.regresar {
+    margin-top:2%;
+    margin-left: 2%;
+    width: 10%;
+    color: white;
+    float:left;
+    text-decoration:none;
+}
+
+    .regresar:hover {
+        color: cornflowerblue;
+        text-decoration:underline;
+    }
 .layout-leyenda {
     margin-top: 0%;
     margin-left: 0%;
-    width: 100%;
+    width: 88%;
     height: 100%;
     background-color: inherit;
     color: white;
     text-align: center;
     font-weight: bolder;
+    float: left;
 }
+
 .button-to-submit {
     margin-left: 40%;
     width: 15%;
