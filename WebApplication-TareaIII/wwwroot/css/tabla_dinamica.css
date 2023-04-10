@@ -1,0 +1,56 @@
+﻿.tabla-economica 
+{
+    margin-top:0%;
+    margin-left:0%;
+    width: 100%;
+    height: 70%;
+}
+.contenedor-columnas {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.tabla-economica-row {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 30%;
+    height: 20%;
+}
+.contenedor-opciones {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 20%;
+    height: 5%;
+}
+.opciones, .regresar {
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+.uno {
+    background-color: #9EFFC2;
+    border: 1px solid #247855;
+    color: #247855;
+}
+.uno:hover {
+    background-color: white;
+}
+.dos {
+    background-color: #F5B379;
+    border: 1px solid #F56000;
+    color: #F56000;
+}
+.dos:hover {
+    background-color: white;
+}
+.regresar {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+.regresar:hover {
+    color: black;
+}

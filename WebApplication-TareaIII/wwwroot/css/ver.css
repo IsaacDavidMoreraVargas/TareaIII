@@ -1,0 +1,98 @@
+﻿.contenedor-leyenda-buscador, .cabeza-lote {
+    background-color: #34b774;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+.contenedor-buscador {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 99%;
+}
+.leyenda-input-buscador {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 10%;
+    background-color: none;
+    border-left: 6px solid #34b774;
+    font-weight: bold;
+    color: black;
+    float: left;
+}
+.input-buscador {
+    margin-top: 0%;
+    margin-left: 1%;
+    width: 88%;
+    border: 1px solid gray;
+    float: left;
+}
+
+.contenedor-leyenda-buscador {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 99%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.leyenda-buscador {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+    background-color: inherit;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tabla-lote {
+    margin-top: 3%;
+    margin-left: 1%;
+    width: 98%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 5px;
+}
+
+.fila-lote {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+}
+
+.fila-segundo {
+    margin-top: 1%;
+}
+
+.cabeza-lote, .celda-lote {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 30%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.cabeza-lote, .celda-lote {
+    margin-left: 1%;
+    border-right: none;
+}
+
+.lote-primero {
+    margin-left: 0%;
+    width: 69%;
+}
+
+.lote-par {
+    background-color: white;
+    color: black;
+}
+
+.lote-impar {
+    background-color: #a8ebd0;
+    color: white;
+}

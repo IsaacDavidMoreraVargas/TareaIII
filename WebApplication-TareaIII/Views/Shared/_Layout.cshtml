@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea III</title>
+    <link rel="stylesheet" type="text/css" href="~/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/tabla_dinamica.css" />
+    <script type="text/javascript" src="~/js/general.js"></script>
+</head>
+<body onload="primera_vez()">
+    <div class="layout-top"></div>
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

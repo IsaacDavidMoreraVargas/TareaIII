@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .container {
+        height: 70%;
+    }
+    .Bienvenida {
+        margin-top: 0%;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    h2 {
+        margin-top: 5%;
+        margin-left: 0%;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid cornflowerblue;
+    }
+</style>
+
+<script type="text/javascript">
+    function esconder_todos()
+    {
+        let array = document.getElementsByClassName("opciones");
+        for (let flag = 0; flag < array.length; flag++) {
+            array[flag].style.display = "none";
+        }
+        array[0].style.display = "block";
+        array[12].style.display = "block";
+        /*
+        array = document.getElementsByClassName("regresar");
+        for (let flag = 0; flag < array.length; flag++) {
+            array[flag].style.display = "none";
+        }
+        */
+    }
+    
+    function esconder_especificos(numero)
+    {
+        esconder_todos()
+
+        switch (numero) {
+            case 1:
+                //
+                let array = document.getElementsByClassName("opciones uno");
+                for (let flag = 0; flag < array.length; flag++) {
+                    if (array[flag].textContent!="Ir")
+                    {
+                        array[flag].style.display = "block";
+                    }
+                }
+                //document.getElementsByClassName("regresar uno")[0].style.display = "block";
+                break;
+            case 2:
+                let array2 = document.getElementsByClassName("opciones dos");
+                for (let flag = 0; flag < array2.length; flag++) {
+                    if (array2[flag].textContent != "Ir") {
+                        array2[flag].style.display = "block";
+                    }
+                }
+                //document.getElementsByClassName("regresar dos")[0].style.display = "block";
+                break;
+        }
+        
+    }
+
+    function esconder_pequeno(caso, numero) {
+        switch (caso) {
+            case 1:
+                let array = document.getElementsByClassName("opciones uno");
+                for (let flag = 0; flag < array.length; flag++) {
+                    //alert(">"+array[flag].textContent+"<")
+                    if (array[flag].textContent == "Ir") {
+                        array[flag].style.display = "none";
+                    }
+                }
+                document.getElementsByClassName("opciones uno")[numero].style.display = "block";
+                break;
+            case 2:
+                let array2 = document.getElementsByClassName("opciones dos");
+                for (let flag = 0; flag < array2.length; flag++) {
+                    if (array2[flag].textContent == "Ir") {
+                        array2[flag].style.display = "none";
+                    }
+                }
+                document.getElementsByClassName("opciones dos")[numero].style.display = "block";
+                break;
+        }
+    }
+
+</script>
+
+    <div class="contenedor-columnas">
+        <div class="Bienvenida"><h2>Bienvenido al Sistema de registro y consulta de productos</h2></div>
+        <table class="tabla-economica">
+            <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            </tr>
+            <tr class="tabla-economica-row">
+                <td class="contenedor-opciones"><div class="opciones uno" type="button" onclick="esconder_especificos(1)">Registrar</div></td>
+                <td class="contenedor-opciones"><div class="opciones uno" type="button" onclick="esconder_pequeno(1,2)">Nuevo</div></td>
+            <td class="contenedor-opciones"><a class="opciones uno" type="button" asp-action="Nuevo" asp-controller="Producto">Ir</a></td>
+            </tr>
+            <tr class="tabla-economica-row">
+            <td class="contenedor-opciones"><div class="opciones"></div></td>
+            <td class="contenedor-opciones"><div class="opciones uno" type="button" onclick="esconder_pequeno(1,4)">Modificar</div></td>
+            <td class="contenedor-opciones"><a class="opciones uno" type="button" asp-action="Nuevo" asp-controller="Producto">Ir</a></td>
+            </tr>
+            <tr class="tabla-economica-row">
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+            <!--<td class="contenedor-opciones"><div class="regresar uno" type="button" onclick="regresar_especifico(1)">Regresar</div></td>-->
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+            </tr>
+            <tr class="tabla-economica-row">
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+            </tr>
+            <tr class="tabla-economica-row">
+                <td class="contenedor-opciones"><div class="opciones dos" type="button" onclick="esconder_especificos(2)">Verificar</div></td>
+            <td class="contenedor-opciones"><div class="opciones dos" type="button" onclick="esconder_pequeno(2,2)">Consultar</div></td>
+            <td class="contenedor-opciones"><a class="opciones dos" type="button" asp-action="Ver" asp-controller="Producto" onclick="">Ir</a></td>
+            </tr>
+            <tr class="tabla-economica-row">
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+            <!--<td class="contenedor-opciones"><div class="regresar dos" type="button" onclick="regresar_especifico(2)">Regresar</div></td>-->
+                <td class="contenedor-opciones"><div class="opciones"></div></td>
+            </tr>
+        </table>
+    </div>
+    
