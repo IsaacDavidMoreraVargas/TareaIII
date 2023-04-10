@@ -6,6 +6,7 @@ namespace WebApplication_TareaIII.Models.Producto
     {
         [Key]
         public int? Id_Producto { get; set; }
+
         public string Lote_Producto { get; set; }
 
         public string Fecha_Fabricacion { get; set; }

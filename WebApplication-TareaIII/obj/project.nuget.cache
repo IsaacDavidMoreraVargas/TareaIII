@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hgBQuy1uQJoPy1FL/M5MummfQckKiZCk+sjOp1THoBjekHozONQkXX123gCWqq+q9ZmjZgRgLX6SlcPkJfY3ow==",
+  "dgSpecHash": "tzAd97d2HN11Sw6X2YD/vUtfT33kZ1D0BMBo4FXni1GCJouFecH2Wng3DXsLaTMVytARvrx8p90k3g2Vn903mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\WebApplication-TareaIII\\WebApplication-TareaIII.csproj",
+  "projectFilePath": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\WebApplication-TareaIII.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Isaac\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Isaac\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

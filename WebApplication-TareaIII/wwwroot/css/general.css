@@ -60,6 +60,9 @@ main {
     width: 15%;
     border-radius: 5px;
 }
+.button-to-submit:hover {
+    background-color: white;
+}
 .contenedor-valor {
     margin-top: 6%;
     margin-left: 10%;

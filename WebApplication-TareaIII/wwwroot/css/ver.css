@@ -49,15 +49,20 @@
     margin-top: 3%;
     margin-left: 1%;
     width: 98%;
-    height: 50%;
+    height: 90%;
     border: 1px solid black;
     position: relative;
     overflow-y: scroll;
+    overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     border-radius: 5px;
 }
-
+.contenedor-filas-lote {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+}
 .fila-lote {
     margin-top: 0%;
     margin-left: 0%;
@@ -71,14 +76,14 @@
 .cabeza-lote, .celda-lote {
     margin-top: 0%;
     margin-left: 0%;
-    width: 30%;
+    width: 19.8%;
     float: left;
     text-align: center;
     color: white;
 }
 
 .cabeza-lote, .celda-lote {
-    margin-left: 1%;
+    margin-left: 0.2%;
     border-right: none;
 }
 
@@ -93,6 +98,6 @@
 }
 
 .lote-impar {
-    background-color: #a8ebd0;
+    background-color: #74cebc;
     color: white;
 }

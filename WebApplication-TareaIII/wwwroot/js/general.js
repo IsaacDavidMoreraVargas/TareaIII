@@ -25,7 +25,7 @@ function actualizar_fecha(numero, input_meta, input_origen,validar)
                 document.getElementsByClassName(input_meta)[numero].value = document.getElementsByClassName(input_origen)[numero].value;
             } else {
                 fecha_origen.value = "";
-                alert("Fecha caducidad no puede ser menor a Fecha fabricacion");
+                alert("Fecha caducidad no puede ser menor o igual a Fecha fabricacion");
             }
         } catch { }
     } else
