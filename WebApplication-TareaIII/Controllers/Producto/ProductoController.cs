@@ -16,7 +16,6 @@ namespace WebApplication_TareaIII.Controllers.Producto
         {
             return View();
         }
-
         public IActionResult Nuevo(int id)
         {
             switch (id)
@@ -88,7 +87,6 @@ namespace WebApplication_TareaIII.Controllers.Producto
             }
             return View();
         }
-
         public IActionResult Registrar_Modificado()
         {
             try
@@ -132,7 +130,6 @@ namespace WebApplication_TareaIII.Controllers.Producto
 
             return RedirectToAction("Nuevo", "Producto");
         }
-
         public void correcto_incorrecto(int numero)
         {
             string crear_alert = "";
