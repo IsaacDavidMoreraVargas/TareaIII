@@ -5,7 +5,10 @@
     Layout = "_Layout_dos_columnas";
 }
 @model WebApplication_TareaIII.Models.Producto.asociar_producto
+@{
 
+    @Html.Raw(@TempData["Alert-Alert"]);
+}
 <form method="post" enctype="multipart/form-data" asp-controller="Producto" asp-action="Registrar">
     <div class="fila">
         <div class="columna">

@@ -9,7 +9,9 @@ namespace WebApplication_TareaIII.Controllers.Producto
         [BindProperty]
         public WebApplication_TareaIII.Models.Producto.asociar_producto Registro_registro { get; set; }
         Producto_Context context_producto = new Producto_Context();
-
+        string operacion_correcta = "<div class=?ventana-alertas color_correcto?>";
+        string operacion_incorrecta = "<div class=?ventana-alertas color_incorrecto ?>";
+        string operacion_cierre = "</div>";
         public IActionResult Index()
         {
             return View();
@@ -100,12 +102,13 @@ namespace WebApplication_TareaIII.Controllers.Producto
 
                 context_producto.Registros_Producto.Add(Registro_registro);
                 context_producto.SaveChanges();
+                correcto_incorrecto(0);
             }
-            catch (Exception e) { Console.WriteLine("Exception en paso 2: " + e); }
+            catch (Exception e) { Console.WriteLine("Exception en paso 2: " + e); correcto_incorrecto(1); }
 
             return RedirectToAction("Modificar", "Producto");
         }
-            public IActionResult Cero(string lote)
+        public IActionResult Cero(string lote)
         {
             var resultados = context_producto.Registros_Producto.ToList();
 
@@ -119,25 +122,31 @@ namespace WebApplication_TareaIII.Controllers.Producto
         {
             try
             {
-                /*
-                if (Registro_registro.Id_Producto != null)
-                {
-                    var resultados = context_producto.Registros_Producto.Find(Registro_registro.Id_Producto);
-                    if (resultados != null)
-                    {
-                        context_producto.Registros_Producto.Remove(resultados);
-                        context_producto.SaveChanges();
-                    }
-                }
-                */
                 var resultados = context_producto.Registros_Producto.ToList();
                 Registro_registro.Id_Producto = resultados.Count + 1;
                 context_producto.Registros_Producto.Add(Registro_registro);
                 context_producto.SaveChanges();
+                correcto_incorrecto(0);
             }
-            catch (Exception e) { Console.WriteLine("Exception en paso 1: " + e); }
+            catch (Exception e) { Console.WriteLine("Exception en paso 1: " + e); correcto_incorrecto(1); }
 
             return RedirectToAction("Nuevo", "Producto");
+        }
+
+        public void correcto_incorrecto(int numero)
+        {
+            string crear_alert = "";
+            switch(numero)
+            {
+                case 0:
+                    crear_alert = operacion_correcta + "Operacion Exitosa" + operacion_cierre;
+                    break;
+                case 1:
+                    crear_alert = operacion_incorrecta + "Operacion No Exitosa" + operacion_cierre;
+                    break;
+            }
+            crear_alert = crear_alert.Replace('?','"');
+            TempData["Alert-Alert"] = crear_alert;
         }
     }
 }

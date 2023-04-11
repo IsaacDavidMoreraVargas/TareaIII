@@ -7,6 +7,7 @@ let color_boton_correcto = "#8fc2ec";
 function primera_vez()
 {
     evaluar_vacios()
+    Cerrar_Lento()
 }
 
 function esconder_todos() { }
@@ -75,4 +76,20 @@ function evaluar_vacios()
         boton.style.backgroundColor = color_elegido;
     }
     
+}
+
+function Cerrar_Lento(elemento) {
+
+    let ventanaalerta = document.getElementsByClassName("ventana-alertas")[0];
+    if (ventanaalerta != null) {
+            ventanaalerta.style.opacity = "1";
+            for (let i = 10; i >= 0; i--) {
+                setTimeout(function () {
+                    ventanaalerta.style.opacity = "'0." + i + "'";
+                    if (i == 0) {
+                        ventanaalerta.remove();
+                    }
+                }, (10 - i) * 100);
+            }
+    }
 }
