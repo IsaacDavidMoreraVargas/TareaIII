@@ -7,11 +7,13 @@
     <title>Tarea III</title>
     <link rel="stylesheet" type="text/css" href="~/css/general.css" />
     <link rel="stylesheet" type="text/css" href="~/css/tabla_dinamica.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/dos_columnas.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/modificar.css" />
     <script type="text/javascript" src="~/js/general.js"></script>
-    <script type="text/javascript" src="~/js/tabla_dinamica.js"></script>
+    <script type="text/javascript" src="~/js/metodos_online.js"></script>
 </head>
-<body onload="esconder_todos()">
-    <div class="layout-top"><p class="layout-leyenda">Sistema de Registro de inventario en Línea</p></div>
+<body onload="primera_vez()">
+    <div class="layout-top"><a class="regresar" asp-action="Index" asp-controller="Home">Regresar</a><p class="layout-leyenda">Sistema de Registro de inventario en Línea</p></div>
     <div class="container">
         <main role="main">
             @RenderBody()

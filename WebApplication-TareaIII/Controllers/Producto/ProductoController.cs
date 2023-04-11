@@ -60,11 +60,66 @@ namespace WebApplication_TareaIII.Controllers.Producto
         {
             return View();
         }
+        public IActionResult Modificar(int id)
+        {
 
+            var resultados = context_producto.Registros_Producto.ToList();
+            if (resultados != null)
+            {
+                ViewBag.ListaProductos = resultados;
+            }
+
+            if (id != 0)
+            {
+                var especifico = context_producto.Registros_Producto.Find(id);
+                if (especifico != null)
+                {
+                    TempData["Id_Producto"] = especifico.Id_Producto;
+                    TempData["Lote_Producto"] = especifico.Lote_Producto;
+                    TempData["Fecha_Fabricacion"] = especifico.Fecha_Fabricacion;
+                    TempData["Fecha_Caducidad"] = especifico.Fecha_Caducidad;
+                    TempData["Nombre_Completo"] = especifico.Nombre_Completo;
+                    TempData["Cantidad_Unidades"] = especifico.Cantidad_Unidades;
+                    TempData["Informacion_Proveedor"] = especifico.Informacion_Proveedor;
+                }
+                
+            }
+            return View();
+        }
+
+        public IActionResult Registrar_Modificado()
+        {
+            try
+            {
+                var resultados = context_producto.Registros_Producto.Find(Registro_registro.Id_Producto);
+                if (resultados != null)
+                {
+                    context_producto.Registros_Producto.Remove(resultados);
+                    context_producto.SaveChanges();
+                }
+
+                context_producto.Registros_Producto.Add(Registro_registro);
+                context_producto.SaveChanges();
+            }
+            catch (Exception e) { Console.WriteLine("Exception en paso 2: " + e); }
+
+            return RedirectToAction("Modificar", "Producto");
+        }
+            public IActionResult Cero(string lote)
+        {
+            var resultados = context_producto.Registros_Producto.ToList();
+
+            if (resultados != null)
+            {
+                ViewBag.ListaProductos = resultados;
+            }
+            return View();
+        }
         public IActionResult Registrar()
         {
             try
             {
+                /*
                 if (Registro_registro.Id_Producto != null)
                 {
                     var resultados = context_producto.Registros_Producto.Find(Registro_registro.Id_Producto);
@@ -74,6 +129,9 @@ namespace WebApplication_TareaIII.Controllers.Producto
                         context_producto.SaveChanges();
                     }
                 }
+                */
+                var resultados = context_producto.Registros_Producto.ToList();
+                Registro_registro.Id_Producto = resultados.Count + 1;
                 context_producto.Registros_Producto.Add(Registro_registro);
                 context_producto.SaveChanges();
             }

@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "_Layout_dos_cero";
+}
+
+<div class="contenedor-leyenda-buscador"><p class="leyenda-buscador">Productos con cero existencias</p></div>
+<div class="tabla-lote">
+    <div class="fila-lote fila-primero">
+        <div class="cabeza-lote">Lote</div>
+        <div class="cabeza-lote">Fecha Fabricacion</div>
+        <div class="cabeza-lote">Fecha Caducidad</div>
+        <div class="cabeza-lote">Nombre Completo</div>
+        <div class="cabeza-lote">Informacion</div>
+        <div class="cabeza-lote">Cantidad</div>
+    </div>
+    <div class="contenedor-filas-lote">
+        @{
+            if (ViewBag.ListaProductos != null)
+            {
+                int bandera = 0;
+                foreach (WebApplication_TareaIII.Models.Producto.asociar_producto producto in ViewBag.ListaProductos)
+                {
+                    if ((bandera % 2) == 0)
+                    {
+                        @if(producto.Cantidad_Unidades==0)
+                        {
+                            <div class="fila-lote fila-segundo">
+                                <div class="celda-lote lote-par rojo">@producto.Lote_Producto</div>
+                                <div class="celda-lote lote-par rojo">@producto.Fecha_Fabricacion</div>
+                                <div class="celda-lote lote-par rojo">@producto.Fecha_Caducidad</div>
+                                <div class="celda-lote lote-par rojo">@producto.Nombre_Completo</div>
+                                <div class="celda-lote lote-par rojo">@producto.Informacion_Proveedor</div>
+                                <div class="celda-lote lote-par rojo">@producto.Cantidad_Unidades</div>
+                            </div>
+                        }else
+                        {
+                            <div class="fila-lote fila-segundo">
+                                <div class="celda-lote lote-par">@producto.Lote_Producto</div>
+                                <div class="celda-lote lote-par">@producto.Fecha_Fabricacion</div>
+                                <div class="celda-lote lote-par">@producto.Fecha_Caducidad</div>
+                                <div class="celda-lote lote-par">@producto.Nombre_Completo</div>
+                                <div class="celda-lote lote-par">@producto.Informacion_Proveedor</div>
+                                <div class="celda-lote lote-par">@producto.Cantidad_Unidades</div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        @if (producto.Cantidad_Unidades == 0)
+                        {
+                            <div class="fila-lote fila-segundo">
+                                <div class="celda-lote lote-impar rojo">@producto.Lote_Producto</div>
+                                <div class="celda-lote lote-impar rojo">@producto.Fecha_Fabricacion</div>
+                                <div class="celda-lote lote-impar rojo">@producto.Fecha_Caducidad</div>
+                                <div class="celda-lote lote-impar rojo">@producto.Nombre_Completo</div>
+                                <div class="celda-lote lote-impar rojo">@producto.Informacion_Proveedor</div>
+                                <div class="celda-lote lote-impar rojo">@producto.Cantidad_Unidades</div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="fila-lote fila-segundo">
+                                <div class="celda-lote lote-impar">@producto.Lote_Producto</div>
+                                <div class="celda-lote lote-impar">@producto.Fecha_Fabricacion</div>
+                                <div class="celda-lote lote-impar">@producto.Fecha_Caducidad</div>
+                                <div class="celda-lote lote-impar">@producto.Nombre_Completo</div>
+                                <div class="celda-lote lote-impar">@producto.Informacion_Proveedor</div>
+                                <div class="celda-lote lote-impar">@producto.Cantidad_Unidades</div>
+                            </div>
+                        }
+                        
+                    }
+                    Console.WriteLine(bandera);
+                    bandera++;
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("nuLO");    
+            }
+        }
+
+
+    </div>
+
+
+</div
+>

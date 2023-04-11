@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Controllers\\Producto",
+    "\\Models",
+    "\\Models\\Producto",
+    "\\Views",
+    "\\Views\\Producto",
+    "\\wwwroot",
+    "\\wwwroot\\css",
+    "\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\WebApplication-TareaIII.sln",
+  "PreviewInSolutionExplorer": false
+}

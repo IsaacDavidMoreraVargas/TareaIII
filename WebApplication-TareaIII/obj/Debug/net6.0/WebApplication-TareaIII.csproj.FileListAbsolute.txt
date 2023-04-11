@@ -176,3 +176,4 @@ C:\Users\Isaac\Mi unidad\SYNC\UNED\03101 - PROGRAMACION AVANZADA EN WEB\Instrume
 C:\Users\Isaac\Mi unidad\SYNC\UNED\03101 - PROGRAMACION AVANZADA EN WEB\Instrumentos\TareaIII\WebApplication-TareaIII\obj\Debug\net6.0\WebApplication-TareaIII.pdb
 C:\Users\Isaac\Mi unidad\SYNC\UNED\03101 - PROGRAMACION AVANZADA EN WEB\Instrumentos\TareaIII\WebApplication-TareaIII\obj\Debug\net6.0\WebApplication-TareaIII.genruntimeconfig.cache
 C:\Users\Isaac\Mi unidad\SYNC\UNED\03101 - PROGRAMACION AVANZADA EN WEB\Instrumentos\TareaIII\WebApplication-TareaIII\obj\Debug\net6.0\ref\WebApplication-TareaIII.dll
+C:\Users\Isaac\Mi unidad\SYNC\UNED\03101 - PROGRAMACION AVANZADA EN WEB\Instrumentos\TareaIII\WebApplication-TareaIII\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_dos_modificar.cshtml.rz.scp.css

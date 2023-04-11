@@ -2,7 +2,7 @@ Create Database TareaIII
 GO
 USE TareaIII
 Create table datosProducto(
-		Id_Producto int Identity ,
+		Id_Producto int NOT NULL ,
         Lote_Producto varchar(300) NOT NULL,
 		Fecha_Fabricacion varchar(300) NOT NULL,
 		Fecha_Caducidad varchar(300) NOT NULL,

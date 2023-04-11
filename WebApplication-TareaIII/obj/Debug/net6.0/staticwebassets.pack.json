@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\WebApplication-TareaIII.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\cero.css",
+      "PackagePath": "staticwebassets\\css\\cero.css"
+    },
+    {
       "Id": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\dos_columnas.css",
       "PackagePath": "staticwebassets\\css\\dos_columnas.css"
     },
     {
       "Id": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\general.css",
       "PackagePath": "staticwebassets\\css\\general.css"
+    },
+    {
+      "Id": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\modificar.css",
+      "PackagePath": "staticwebassets\\css\\modificar.css"
     },
     {
       "Id": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\tabla_dinamica.css",

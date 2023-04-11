@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Producto/Cero.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ2Vyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Producto/Modificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTW9kaWZpY2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Producto/Nuevo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTnVldm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Shared/_Layout_dos_cero.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfZG9zX2Nlcm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -55,3 +67,7 @@ build_metadata.AdditionalFiles.CssScope = b-lwp33rorwy
 [C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Shared/_Layout_dos_columnas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfZG9zX2NvbHVtbmFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-iqgkzyi6aa
+
+[C:/Users/Isaac/Mi unidad/SYNC/UNED/03101 - PROGRAMACION AVANZADA EN WEB/Instrumentos/TareaIII/WebApplication-TareaIII/Views/Shared/_Layout_dos_modificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfZG9zX21vZGlmaWNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-yw0v9k17tw

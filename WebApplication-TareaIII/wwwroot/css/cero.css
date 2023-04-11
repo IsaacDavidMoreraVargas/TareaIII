@@ -76,7 +76,7 @@
 .cabeza-lote, .celda-lote {
     margin-top: 0%;
     margin-left: 0%;
-    width: 19.8%;
+    width: 16.4%;
     float: left;
     text-align: center;
     color: white;
@@ -100,4 +100,9 @@
 .lote-impar {
     background-color: #74cebc;
     color: white;
+}
+
+.rojo {
+    border-top: 2px dashed red;
+    border-bottom: 2px dashed red;
 }

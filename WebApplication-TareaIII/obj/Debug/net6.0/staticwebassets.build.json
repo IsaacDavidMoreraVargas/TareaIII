@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9d4Xyx8NO5FtKohQSBvipfu+n48DVJMlzjNU/v+xnAM=",
+  "Hash": "Ie4J3Uem3VM83yqclwO1UhJP8mzfOww800JDqghcdM0=",
   "Source": "WebApplication-TareaIII",
   "BasePath": "_content/WebApplication-TareaIII",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplication-TareaIII.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\cero.css",
+      "SourceId": "WebApplication-TareaIII",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\",
+      "BasePath": "_content/WebApplication-TareaIII",
+      "RelativePath": "css/cero.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cero.css"
+    },
+    {
       "Identity": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\dos_columnas.css",
       "SourceId": "WebApplication-TareaIII",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\general.css"
+    },
+    {
+      "Identity": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\modificar.css",
+      "SourceId": "WebApplication-TareaIII",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\",
+      "BasePath": "_content/WebApplication-TareaIII",
+      "RelativePath": "css/modificar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\modificar.css"
     },
     {
       "Identity": "C:\\Users\\Isaac\\Mi unidad\\SYNC\\UNED\\03101 - PROGRAMACION AVANZADA EN WEB\\Instrumentos\\TareaIII\\WebApplication-TareaIII\\wwwroot\\css\\tabla_dinamica.css",

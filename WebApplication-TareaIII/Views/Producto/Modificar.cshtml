@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout_dos_modificar";
+}
+@model WebApplication_TareaIII.Models.Producto.asociar_producto
+
+<form method="post" enctype="multipart/form-data" asp-controller="Producto" asp-action="Registrar_Modificado">
+    <div class="fila">
+        <div class="columna">
+            <div class="contenedor-leyenda-buscador"><p class="leyenda-buscador">Productos con cero existencias</p></div>
+            <div class="tabla-lote">
+                <div class="fila-lote fila-primero">
+                    <div class="cabeza-lote">Lote</div>
+                    <div class="cabeza-lote">Fecha Fabricacion</div>
+                    <div class="cabeza-lote">Fecha Caducidad</div>
+                    <div class="cabeza-lote">Nombre Completo</div>
+                    <div class="cabeza-lote">Informacion</div>
+                    <div class="cabeza-lote">Cantidad</div>
+                    <div class="cabeza-lote">Editar</div>
+                </div>
+                <div class="contenedor-filas-lote">
+                    @{
+                        if (ViewBag.ListaProductos != null)
+                        {
+                            int bandera = 0;
+                            foreach (WebApplication_TareaIII.Models.Producto.asociar_producto producto in ViewBag.ListaProductos)
+                            {
+                                if ((bandera % 2) == 0)
+                                {
+                                    <div class="fila-lote fila-segundo">
+                                        <div class="celda-lote lote-par">@producto.Lote_Producto</div>
+                                        <div class="celda-lote lote-par">@producto.Fecha_Fabricacion</div>
+                                        <div class="celda-lote lote-par">@producto.Fecha_Caducidad</div>
+                                        <div class="celda-lote lote-par">@producto.Nombre_Completo</div>
+                                        <div class="celda-lote lote-par">@producto.Informacion_Proveedor</div>
+                                        <div class="celda-lote lote-par">@producto.Cantidad_Unidades</div>
+                                        <div class="celda-lote lote-par"><a asp-controller="Producto" asp-action="Modificar" asp-route-id="@producto.Id_Producto">Editar</a></div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="fila-lote fila-segundo">
+                                        <div class="celda-lote lote-impar">@producto.Lote_Producto</div>
+                                        <div class="celda-lote lote-impar">@producto.Fecha_Fabricacion</div>
+                                        <div class="celda-lote lote-impar">@producto.Fecha_Caducidad</div>
+                                        <div class="celda-lote lote-impar">@producto.Nombre_Completo</div>
+                                        <div class="celda-lote lote-impar">@producto.Informacion_Proveedor</div>
+                                        <div class="celda-lote lote-impar">@producto.Cantidad_Unidades</div>
+                                        <div class="celda-lote lote-impar"><a asp-controller="Producto" asp-action="Modificar" asp-route-id="@producto.Id_Producto">Editar</a></div>
+                                    </div>
+                                }
+                                bandera++;
+                            }
+                        }
+                       }
+                </div>
+            </div>
+        </div>
+        <div class="columna">
+                <input runat="server" asp-for="Id_Producto" class="no-mostrar" id="" value=@TempData["Id_Producto"] type="number" />
+                <div class="contenedor-valor">
+                <label class="label-valor">Lote</label>
+                <input runat="server" asp-for="Lote_Producto" class="input-valor" id="" value="@TempData["Lote_Producto"]" type="text" required onkeyup="evaluar_vacios()" />
+                </div>
+                <div class="contenedor-valor">
+                <label class="label-valor">Fecha Fabricacion</label>
+                <input runat="server" asp-for="Fecha_Fabricacion" readonly class="box-input-valor" id="" value="@TempData["Fecha_Fabricacion"]" type="text" onchange="evaluar_vacios()" required />
+                <input class="input-date-valor" id="" value="@TempData["Fecha_Fabricacion"]" type="date" onchange="actualizar_fecha(0,'box-input-valor','input-date-valor',false)" required />
+                </div>
+                <div class="contenedor-valor">
+                <label class="label-valor">Fecha Caducidad</label>
+                <input runat="server" asp-for="Fecha_Caducidad" class="box-input-valor" readonly id="" value="@TempData["Fecha_Caducidad"]" type="text" onchange="evaluar_vacios()" required />
+                <input class="input-date-valor" id="" value="@TempData["Fecha_Caducidad"]" type="date" onchange="actualizar_fecha(1,'box-input-valor','input-date-valor',true)" required />
+                </div>
+                <div class="contenedor-valor">
+                <label class="label-valor">Nombre Completo</label>
+                <input runat="server" asp-for="Nombre_Completo" class="input-valor" id="" value="@TempData["Nombre_Completo"]" type="text" onkeyup="evaluar_vacios()" required />
+                </div>
+                <div class="contenedor-valor">
+                <label class="label-valor">Cantidad Unidades</label>
+                <input runat="server" asp-for="Cantidad_Unidades" class="input-valor" id="" value=@TempData["Cantidad_Unidades"] type="number" required onkeyup="evaluar_vacios()" />
+                </div>
+                <div class="contenedor-valor">
+                    <labe class="label-valor">Información Proveedor</labe>
+                <input runat="server" asp-for="Informacion_Proveedor" class="input-valor input-grande" id="" value="@TempData["Informacion_Proveedor"]" type="text" onkeyup="evaluar_vacios()" required />
+                </div>
+        </div>
+    </div>
+    <input class="button-to-submit" type="submit" value="Registrar" />
+</form>

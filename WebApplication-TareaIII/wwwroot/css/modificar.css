@@ -1,4 +1,10 @@
-﻿.contenedor-leyenda-buscador, .cabeza-lote {
+﻿.columna {
+    height:97%;
+}
+.contenedor-valor {
+    margin-top:1%;
+}
+.contenedor-leyenda-buscador, .cabeza-lote {
     background-color: #34b774;
     font-weight: bold;
     color:white;
@@ -68,7 +74,9 @@
     margin-left: 0%;
     width: 100%;
 }
-
+.fila-primero {
+    height:15%;
+}
 .fila-segundo {
     margin-top: 1%;
 }
@@ -76,7 +84,7 @@
 .cabeza-lote, .celda-lote {
     margin-top: 0%;
     margin-left: 0%;
-    width: 19.8%;
+    width: 14%;
     float: left;
     text-align: center;
     color: white;
@@ -100,4 +108,9 @@
 .lote-impar {
     background-color: #74cebc;
     color: white;
+}
+
+.rojo {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
 }
